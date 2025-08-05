@@ -5,10 +5,8 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import Layout from "@/components/Layout";
-
 const TrabalheConosco = () => {
-  return (
-    <Layout>
+  return <Layout>
       {/* Hero Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
@@ -105,24 +103,18 @@ const TrabalheConosco = () => {
               <CardHeader>
                 <div className="flex justify-between items-start">
                   <div>
-                    <CardTitle className="font-playfair text-xl text-foreground">
-                      Designer de Produto
-                    </CardTitle>
-                    <p className="font-inter text-sm text-gold">Presencial • São Paulo</p>
+                    <CardTitle className="font-playfair text-xl text-foreground">Auxiliar de Produção</CardTitle>
+                    <p className="font-inter text-sm text-gold">Presencial • Pedreira/SP</p>
                   </div>
-                  <span className="bg-gold/10 text-gold px-3 py-1 rounded-full text-xs font-inter">
-                    Pleno
-                  </span>
+                  <span className="bg-gold/10 text-gold px-3 py-1 rounded-full text-xs font-inter">A/B/C</span>
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="font-inter text-muted-foreground mb-4">
-                  Desenvolver novos produtos com foco em design italiano e funcionalidade.
-                </p>
+                <p className="font-inter text-muted-foreground mb-4">Contribuir para a produção das cubas entregando valor para o cliente.</p>
                 <ul className="font-inter text-sm text-muted-foreground space-y-1 mb-4">
-                  <li>• Experiência em design de produto</li>
-                  <li>• Conhecimento em cerâmica</li>
-                  <li>• Portfolio consistente</li>
+                  <li>• Disponibilidade para início imediato</li>
+                  <li>• Vontade de fazer a diferença</li>
+                  <li>• Não precisa de experiência</li>
                 </ul>
               </CardContent>
             </Card>
@@ -230,22 +222,13 @@ const TrabalheConosco = () => {
                       <Label htmlFor="nome" className="font-inter text-sm font-medium text-foreground">
                         Nome completo *
                       </Label>
-                      <Input 
-                        id="nome" 
-                        placeholder="Seu nome completo"
-                        className="mt-2"
-                      />
+                      <Input id="nome" placeholder="Seu nome completo" className="mt-2" />
                     </div>
                     <div>
                       <Label htmlFor="email" className="font-inter text-sm font-medium text-foreground">
                         E-mail *
                       </Label>
-                      <Input 
-                        id="email" 
-                        type="email" 
-                        placeholder="seu@email.com"
-                        className="mt-2"
-                      />
+                      <Input id="email" type="email" placeholder="seu@email.com" className="mt-2" />
                     </div>
                   </div>
 
@@ -254,11 +237,7 @@ const TrabalheConosco = () => {
                       <Label htmlFor="telefone" className="font-inter text-sm font-medium text-foreground">
                         Telefone *
                       </Label>
-                      <Input 
-                        id="telefone" 
-                        placeholder="(11) 99999-9999"
-                        className="mt-2"
-                      />
+                      <Input id="telefone" placeholder="(11) 99999-9999" className="mt-2" />
                     </div>
                     <div>
                       <Label htmlFor="vaga" className="font-inter text-sm font-medium text-foreground">
@@ -283,30 +262,18 @@ const TrabalheConosco = () => {
                     <Label htmlFor="experiencia" className="font-inter text-sm font-medium text-foreground">
                       Experiência profissional *
                     </Label>
-                    <Textarea 
-                      id="experiencia"
-                      placeholder="Conte-nos sobre sua experiência profissional relevante..."
-                      className="mt-2 min-h-[120px]"
-                    />
+                    <Textarea id="experiencia" placeholder="Conte-nos sobre sua experiência profissional relevante..." className="mt-2 min-h-[120px]" />
                   </div>
 
                   <div>
                     <Label htmlFor="motivacao" className="font-inter text-sm font-medium text-foreground">
                       Por que quer trabalhar na Orcia?
                     </Label>
-                    <Textarea 
-                      id="motivacao"
-                      placeholder="Compartilhe sua motivação para fazer parte da equipe Orcia..."
-                      className="mt-2 min-h-[100px]"
-                    />
+                    <Textarea id="motivacao" placeholder="Compartilhe sua motivação para fazer parte da equipe Orcia..." className="mt-2 min-h-[100px]" />
                   </div>
 
                   <div className="pt-4">
-                    <Button 
-                      type="submit" 
-                      size="lg"
-                      className="w-full bg-gold text-background hover:bg-gold/90 font-inter font-medium"
-                    >
+                    <Button type="submit" size="lg" className="w-full bg-gold text-background hover:bg-gold/90 font-inter font-medium">
                       Enviar candidatura
                     </Button>
                   </div>
@@ -321,8 +288,6 @@ const TrabalheConosco = () => {
           </div>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default TrabalheConosco;
