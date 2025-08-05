@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import orciaLogo from "@/assets/orcia-logo.svg";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const location = useLocation();
@@ -15,9 +16,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             {/* Logo */}
             <Link to="/" className="flex items-center">
               <img 
-                src="/lovable-uploads/1f7155e1-01fd-461f-99a2-a82b1607e8ed.png" 
+                src={orciaLogo} 
                 alt="Orcia Logo" 
-                className="h-10 w-auto"
+                className="h-12 w-auto"
               />
             </Link>
 
@@ -95,9 +96,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             <div className="md:col-span-2">
               <div className="mb-4">
                 <img 
-                  src="/lovable-uploads/1f7155e1-01fd-461f-99a2-a82b1607e8ed.png" 
+                  src={orciaLogo} 
                   alt="Orcia Logo" 
-                  className="h-10 w-auto"
+                  className="h-12 w-auto"
                 />
               </div>
               <p className="font-inter text-sm text-primary-foreground/80 mb-4 max-w-md">
