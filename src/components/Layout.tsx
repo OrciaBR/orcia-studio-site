@@ -13,11 +13,12 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <div className="container mx-auto px-6 py-4">
           <nav className="flex items-center justify-between">
             {/* Logo */}
-            <Link to="/" className="flex items-center space-x-2">
-              <div className="flex flex-col">
-                <span className="font-playfair text-2xl font-medium text-foreground">orcia</span>
-                <div className="w-12 h-0.5 bg-gold rounded-full -mt-1"></div>
-              </div>
+            <Link to="/" className="flex items-center">
+              <img 
+                src="/lovable-uploads/c2fbea39-0bd0-4fdd-9ea7-a5cdb9434323.png" 
+                alt="Orcia Logo" 
+                className="h-8 w-auto"
+              />
             </Link>
 
             {/* Navigation */}
@@ -92,9 +93,12 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* Logo e descrição */}
             <div className="md:col-span-2">
-              <div className="flex flex-col mb-4">
-                <span className="font-playfair text-2xl font-medium text-gold">orcia</span>
-                <div className="w-12 h-0.5 bg-gold rounded-full -mt-1"></div>
+              <div className="mb-4">
+                <img 
+                  src="/lovable-uploads/c2fbea39-0bd0-4fdd-9ea7-a5cdb9434323.png" 
+                  alt="Orcia Logo" 
+                  className="h-8 w-auto"
+                />
               </div>
               <p className="font-inter text-sm text-primary-foreground/80 mb-4 max-w-md">
                 Beleza na forma. Cubas com design refinado, materiais nobres e acabamento impecável. 
