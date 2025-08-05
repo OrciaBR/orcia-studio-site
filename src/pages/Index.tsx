@@ -38,7 +38,7 @@ const Index = () => {
             <Button size="lg" className="bg-gold text-background hover:bg-gold/90 font-inter font-medium px-8">
               <Link to="/produtos">Conheça nossos produtos</Link>
             </Button>
-            <Button variant="outline" size="lg" className="border-primary-foreground text-primary hover:bg-sidebar-primary-foreground hover:text-primary font-inter">
+            <Button variant="outline" size="lg" className="border-primary-foreground text-primary hover:text-primary font-inter">
               <Link to="/sobre">Nossa história</Link>
             </Button>
           </div>
@@ -161,7 +161,7 @@ const Index = () => {
             <Button size="lg" className="bg-gold text-background hover:bg-gold/90 font-inter font-medium px-8">
               <Link to="/produtos">Ver produtos</Link>
             </Button>
-            <Button variant="outline" size="lg" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary font-inter">
+            <Button variant="outline" size="lg" className="border-primary-foreground text-primary hover:bg-primary-foreground hover:text-primary font-inter">
               <Link to="/contato">Fale conosco</Link>
             </Button>
           </div>
