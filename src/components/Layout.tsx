@@ -17,7 +17,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               <img 
                 src="/lovable-uploads/c2fbea39-0bd0-4fdd-9ea7-a5cdb9434323.png" 
                 alt="Orcia Logo" 
-                className="h-8 w-auto"
+                className="h-10 w-auto filter brightness-0 dark:brightness-100"
               />
             </Link>
 
@@ -97,7 +97,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 <img 
                   src="/lovable-uploads/c2fbea39-0bd0-4fdd-9ea7-a5cdb9434323.png" 
                   alt="Orcia Logo" 
-                  className="h-8 w-auto"
+                  className="h-10 w-auto"
                 />
               </div>
               <p className="font-inter text-sm text-primary-foreground/80 mb-4 max-w-md">
