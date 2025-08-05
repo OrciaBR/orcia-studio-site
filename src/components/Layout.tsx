@@ -15,9 +15,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             {/* Logo */}
             <Link to="/" className="flex items-center">
               <img 
-                src="/lovable-uploads/c2fbea39-0bd0-4fdd-9ea7-a5cdb9434323.png" 
+                src="/lovable-uploads/1f7155e1-01fd-461f-99a2-a82b1607e8ed.png" 
                 alt="Orcia Logo" 
-                className="h-10 w-auto filter brightness-0 dark:brightness-100"
+                className="h-10 w-auto"
               />
             </Link>
 
@@ -95,7 +95,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             <div className="md:col-span-2">
               <div className="mb-4">
                 <img 
-                  src="/lovable-uploads/c2fbea39-0bd0-4fdd-9ea7-a5cdb9434323.png" 
+                  src="/lovable-uploads/1f7155e1-01fd-461f-99a2-a82b1607e8ed.png" 
                   alt="Orcia Logo" 
                   className="h-10 w-auto"
                 />
