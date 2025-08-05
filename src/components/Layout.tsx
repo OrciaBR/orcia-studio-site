@@ -1,67 +1,38 @@
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import orciaLogo from "@/assets/orcia-logo.svg";
-
-const Layout = ({ children }: { children: React.ReactNode }) => {
+const Layout = ({
+  children
+}: {
+  children: React.ReactNode;
+}) => {
   const location = useLocation();
-
   const isActive = (path: string) => location.pathname === path;
-
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="border-b border-border/50 bg-background/95 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-6 py-4">
           <nav className="flex items-center justify-between">
             {/* Logo */}
             <Link to="/" className="flex items-center">
-              <img 
-                src={orciaLogo} 
-                alt="Orcia Logo" 
-                className="h-12 w-auto"
-              />
+              <img src={orciaLogo} alt="Orcia Logo" className="h-12 w-auto" />
             </Link>
 
             {/* Navigation */}
             <div className="hidden md:flex items-center space-x-8">
-              <Link 
-                to="/" 
-                className={`font-inter text-sm font-medium transition-colors hover:text-gold ${
-                  isActive('/') ? 'text-gold' : 'text-foreground'
-                }`}
-              >
+              <Link to="/" className={`font-inter text-sm font-medium transition-colors hover:text-gold ${isActive('/') ? 'text-gold' : 'text-foreground'}`}>
                 Início
               </Link>
-              <Link 
-                to="/produtos" 
-                className={`font-inter text-sm font-medium transition-colors hover:text-gold ${
-                  isActive('/produtos') ? 'text-gold' : 'text-foreground'
-                }`}
-              >
+              <Link to="/produtos" className={`font-inter text-sm font-medium transition-colors hover:text-gold ${isActive('/produtos') ? 'text-gold' : 'text-foreground'}`}>
                 Produtos
               </Link>
-              <Link 
-                to="/sobre" 
-                className={`font-inter text-sm font-medium transition-colors hover:text-gold ${
-                  isActive('/sobre') ? 'text-gold' : 'text-foreground'
-                }`}
-              >
+              <Link to="/sobre" className={`font-inter text-sm font-medium transition-colors hover:text-gold ${isActive('/sobre') ? 'text-gold' : 'text-foreground'}`}>
                 Sobre
               </Link>
-              <Link 
-                to="/trabalhe-conosco" 
-                className={`font-inter text-sm font-medium transition-colors hover:text-gold ${
-                  isActive('/trabalhe-conosco') ? 'text-gold' : 'text-foreground'
-                }`}
-              >
+              <Link to="/trabalhe-conosco" className={`font-inter text-sm font-medium transition-colors hover:text-gold ${isActive('/trabalhe-conosco') ? 'text-gold' : 'text-foreground'}`}>
                 Trabalhe Conosco
               </Link>
-              <Link 
-                to="/contato" 
-                className={`font-inter text-sm font-medium transition-colors hover:text-gold ${
-                  isActive('/contato') ? 'text-gold' : 'text-foreground'
-                }`}
-              >
+              <Link to="/contato" className={`font-inter text-sm font-medium transition-colors hover:text-gold ${isActive('/contato') ? 'text-gold' : 'text-foreground'}`}>
                 Contato
               </Link>
             </div>
@@ -95,11 +66,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             {/* Logo e descrição */}
             <div className="md:col-span-2">
               <div className="mb-4">
-                <img 
-                  src={orciaLogo} 
-                  alt="Orcia Logo" 
-                  className="h-12 w-auto"
-                />
+                <img src={orciaLogo} alt="Orcia Logo" className="h-12 w-auto" />
               </div>
               <p className="font-inter text-sm text-primary-foreground/80 mb-4 max-w-md">
                 Beleza na forma. Cubas com design refinado, materiais nobres e acabamento impecável. 
@@ -133,9 +100,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
           <div className="border-t border-primary-foreground/20 mt-8 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
-              <p className="font-inter text-xs text-primary-foreground/60">
-                © 2024 Orcia. Todos os direitos reservados.
-              </p>
+              <p className="font-inter text-xs text-primary-foreground/60">© 2025 Orcia. Todos os direitos reservados.</p>
               <div className="flex space-x-4 mt-4 md:mt-0">
                 <Link to="/privacidade" className="font-inter text-xs text-primary-foreground/60 hover:text-gold transition-colors">
                   Política de Privacidade
@@ -148,8 +113,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Layout;
