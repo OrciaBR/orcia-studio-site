@@ -153,7 +153,7 @@ const TrabalheConosco = () => {
 
           <Card className="border-0 shadow-lg">
             <CardContent className="p-8">
-              <form name="TrabalheConosco" method="POST" data-netlify="true" className="space-y-6">
+              <form name="TrabalheConosco" method="POST" action="/pages/success" data-netlify="true" className="space-y-6">
                 <input type="hidden" name="form-name" value="TrabalheConosco" />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
