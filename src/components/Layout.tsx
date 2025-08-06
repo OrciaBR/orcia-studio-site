@@ -1,3 +1,12 @@
+import { useEffect } from "react";
+// Scroll to top on route change
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -11,6 +20,7 @@ const Layout = ({
   const isActive = (path: string) => location.pathname === path;
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return <div className="min-h-screen bg-background">
+    <ScrollToTop />
       {/* Header */}
       <header className="border-b border-border/50 bg-background/95 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-6 py-4">
