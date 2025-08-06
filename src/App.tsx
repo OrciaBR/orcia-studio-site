@@ -9,7 +9,6 @@ import Sobre from "./pages/Sobre";
 import TrabalheConosco from "./pages/TrabalheConosco";
 import Contato from "./pages/Contato";
 import NotFound from "./pages/NotFound";
-import AltHome from "./pages/alt";
 
 const queryClient = new QueryClient();
 

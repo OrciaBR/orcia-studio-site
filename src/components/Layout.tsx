@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import orciaLogo from "@/assets/orcia-logo.svg";
 const Layout = ({
@@ -8,6 +9,7 @@ const Layout = ({
 }) => {
   const location = useLocation();
   const isActive = (path: string) => location.pathname === path;
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="border-b border-border/50 bg-background/95 backdrop-blur-sm sticky top-0 z-50">
@@ -47,11 +49,27 @@ const Layout = ({
             </div>
 
             {/* Mobile menu button */}
-            <button className="md:hidden">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
+            <div className="md:hidden relative">
+              <button onClick={() => setMobileMenuOpen(v => !v)} aria-label="Abrir menu">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+              {mobileMenuOpen && (
+                <div className="absolute right-0 mt-2 w-48 bg-background border border-border/50 rounded-lg shadow-lg z-50 flex flex-col py-2">
+                  <Link to="/" className={`px-4 py-2 font-inter text-sm hover:bg-gold/10 ${isActive('/') ? 'text-gold font-semibold' : 'text-foreground'}`} onClick={() => setMobileMenuOpen(false)}>Início</Link>
+                  <Link to="/produtos" className={`px-4 py-2 font-inter text-sm hover:bg-gold/10 ${isActive('/produtos') ? 'text-gold font-semibold' : 'text-foreground'}`} onClick={() => setMobileMenuOpen(false)}>Produtos</Link>
+                  <Link to="/sobre" className={`px-4 py-2 font-inter text-sm hover:bg-gold/10 ${isActive('/sobre') ? 'text-gold font-semibold' : 'text-foreground'}`} onClick={() => setMobileMenuOpen(false)}>Sobre</Link>
+                  <Link to="/trabalhe-conosco" className={`px-4 py-2 font-inter text-sm hover:bg-gold/10 ${isActive('/trabalhe-conosco') ? 'text-gold font-semibold' : 'text-foreground'}`} onClick={() => setMobileMenuOpen(false)}>Trabalhe Conosco</Link>
+                  <Link to="/contato" className={`px-4 py-2 font-inter text-sm hover:bg-gold/10 ${isActive('/contato') ? 'text-gold font-semibold' : 'text-foreground'}`} onClick={() => setMobileMenuOpen(false)}>Contato</Link>
+                  <a href="https://lista.mercadolivre.com.br/_CustId_2428547429" target="_blank" rel="noopener noreferrer" className="px-4 py-2">
+                    <Button variant="outline" className="w-full border-gold text-gold hover:bg-gold hover:text-background font-inter">
+                      Catálogo
+                    </Button>
+                  </a>
+                </div>
+              )}
+            </div>
           </nav>
         </div>
       </header>
@@ -91,7 +109,7 @@ const Layout = ({
             </div>
 
             {/* Contato */}
-            <div>
+            <div hidden>
               <h3 className="font-inter text-sm font-semibold mb-4">Contato</h3>
               <div className="space-y-2">
                 <p className="font-inter text-sm text-primary-foreground/80">contato@orcia.com.br</p>

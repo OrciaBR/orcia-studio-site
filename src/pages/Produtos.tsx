@@ -11,19 +11,22 @@ const Produtos = () => {
     name: "Cuba Luce",
     category: "Linha Sobrepor",
     description: "Design atemporal com formas suaves e acabamento impecável",
-    image: luceImg
+    image: luceImg,
+    url: "https://www.mercadolivre.com.br/cuba-pia-de-apoio-sobrepor-37x27cm-branca-para-banheiro-lavabo-luce-orcia/p/MLB51901843?pdp_filters=seller_id%3A2428547429"
   }, {
     id: 2,
     name: "Cuba Siena",
     category: "Linha Sobrepor",
     description: "Linhas contemporâneas que valorizam ambientes modernos",
-    image: sienaImg
+    image: sienaImg,
+    url: "https://www.mercadolivre.com.br/cuba-branca-banheiro-lavabo-pia-sobrepor-oval-siena-orcia/up/MLBU3334656818?pdp_filters=seller_id%3A2428547429"
   }, {
     id: 3,
     name: "Cuba Vitta",
     category: "Linha Embutir",
     description: "Sofisticação italiana em cada detalhe e curva",
-    image: vittaImg
+    image: vittaImg,
+    url: "https://www.mercadolivre.com.br/cuba-embutir-48cm-x-355cm-para-banheiro-lavabo-orcia-vitta/up/MLBU3292567143?pdp_filters=seller_id%3A2428547429"
   }];
   return <Layout>
       {/* Hero Section */}
@@ -63,6 +66,9 @@ const Produtos = () => {
                     {product.description}
                   </p>
                   
+                  <Button size="lg" className="bg-gold text-background hover:bg-gold/90 font-inter font-medium px-8 mt-2 w-full">
+                    <a href={product.url} target="_blank" rel="noopener noreferrer">Ver produto</a>
+                  </Button>
                 </CardContent>
               </Card>)}
           </div>

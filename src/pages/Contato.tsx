@@ -27,7 +27,7 @@ const Contato = () => {
       {/* Contact Form & Info */}
       <section className="py-20 bg-muted/20">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div className="grid grid-cols-1  gap-16">
             {/* Contact Form */}
             <div>
               <Card className="border-0 shadow-lg">
@@ -135,7 +135,7 @@ const Contato = () => {
             </div>
 
             {/* Contact Information */}
-            <div className="space-y-8">
+            <div hidden className="space-y-8">
               <div>
                 <h2 className="font-playfair text-3xl font-medium text-foreground mb-6">
                   Informações de contato
