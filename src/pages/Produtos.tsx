@@ -1,3 +1,6 @@
+import luceImg from "@/assets/luce.png";
+import sienaImg from "@/assets/siena.png";
+import vittaImg from "@/assets/vitta.png";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Layout from "@/components/Layout";
@@ -5,32 +8,22 @@ import { Link } from "react-router-dom";
 const Produtos = () => {
   const products = [{
     id: 1,
-    name: "Cuba Classica",
-    category: "Linha Premium",
+    name: "Cuba Luce",
+    category: "Linha Sobrepor",
     description: "Design atemporal com formas suaves e acabamento impecável",
-    price: "A partir de R$ 890",
-    image: "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=400&h=300&fit=crop"
+    image: luceImg
   }, {
     id: 2,
-    name: "Cuba Moderna",
-    category: "Linha Premium",
+    name: "Cuba Siena",
+    category: "Linha Sobrepor",
     description: "Linhas contemporâneas que valorizam ambientes modernos",
-    price: "A partir de R$ 1.200",
-    image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=400&h=300&fit=crop"
+    image: sienaImg
   }, {
     id: 3,
-    name: "Cuba Elegante",
-    category: "Linha Premium",
+    name: "Cuba Vitta",
+    category: "Linha Embutir",
     description: "Sofisticação italiana em cada detalhe e curva",
-    price: "A partir de R$ 1.500",
-    image: "https://images.unsplash.com/photo-1560472354-61fd55d2da86?w=400&h=300&fit=crop"
-  }, {
-    id: 4,
-    name: "Cuba Minimalista",
-    category: "Linha Premium",
-    description: "Simplicidade refinada com máxima funcionalidade",
-    price: "A partir de R$ 750",
-    image: "https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=400&h=300&fit=crop"
+    image: vittaImg
   }];
   return <Layout>
       {/* Hero Section */}
@@ -69,10 +62,7 @@ const Produtos = () => {
                   <p className="font-inter text-muted-foreground mb-6 leading-relaxed">
                     {product.description}
                   </p>
-                  <div className="flex items-center justify-between">
-                    <span className="font-inter text-lg font-semibold text-foreground">
-                      {product.price}
-                    </span>
+                  <div className="flex items-center justify-end">
                     <Button className="bg-gold text-background hover:bg-gold/90 font-inter">
                       Ver detalhes
                     </Button>
@@ -123,14 +113,14 @@ const Produtos = () => {
             <div className="text-center">
               <div className="w-20 h-20 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <svg className="w-10 h-10 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 7h18M3 12h18M3 17h18" />
                 </svg>
               </div>
               <h3 className="font-playfair text-xl font-medium text-foreground mb-3">
-                Acabamento Dourado
+                Fácil Limpeza
               </h3>
               <p className="font-inter text-sm text-muted-foreground">
-                Detalhes em dourado fosco para máxima elegância
+                Superfície lisa que facilita a higienização diária
               </p>
             </div>
 
