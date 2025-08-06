@@ -11,16 +11,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <meta property="og:title" content="e8a92a8c-6650-4497-8101-118fab0d7bb7" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
   </head>
 
   <body>
+    <!-- Netlify Forms dummy for detection -->
+    <form name="Contato" netlify hidden>
+      <input type="text" name="nome" />
+      <input type="email" name="email" />
+      <input type="tel" name="telefone" />
+      <input type="text" name="empresa" />
+      <input type="text" name="assunto" />
+      <textarea name="mensagem"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <form name="TrabalheConosco" netlify hidden>
+      <input type="text" name="nome" />
+      <input type="email" name="email" />
+      <input type="tel" name="telefone" />
+      <input type="text" name="vaga" />
+      <textarea name="experiencia"></textarea>
+      <textarea name="motivacao"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
