@@ -38,6 +38,7 @@ const Contato = () => {
                   <div className="w-12 h-0.5 bg-gold rounded-full mb-8"></div>
                   
                   <form name="Contato" method="POST" data-netlify="true" className="space-y-6">
+                    <input type="hidden" name="form-name" value="Contato" />
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
                         <Label htmlFor="nome" className="font-inter text-sm font-medium text-foreground">

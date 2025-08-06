@@ -16,7 +16,7 @@
 
   <body>
     <!-- Netlify Forms dummy for detection -->
-    <form name="Contato" netlify hidden>
+    <form name="Contato" netlify netlify-honeypot="bot-field" hidden>
       <input type="text" name="nome" />
       <input type="email" name="email" />
       <input type="tel" name="telefone" />
@@ -25,7 +25,7 @@
       <textarea name="mensagem"></textarea>
       <button type="submit">Enviar</button>
     </form>
-    <form name="TrabalheConosco" netlify hidden>
+    <form name="TrabalheConosco" netlify netlify-honeypot="bot-field" hidden>
       <input type="text" name="nome" />
       <input type="email" name="email" />
       <input type="tel" name="telefone" />
