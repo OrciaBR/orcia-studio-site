@@ -4,7 +4,8 @@ import Layout from "@/components/Layout";
 import { Link } from "react-router-dom";
 import heroBathroom from "@/assets/hero-bathroom.jpg";
 import productBasin from "@/assets/product-basin.jpg";
-const Index = () => {
+import orciaLogo from "@/assets/orcia-logo.svg";
+const AltHome = () => {
   return <Layout>
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
@@ -18,21 +19,11 @@ const Index = () => {
         </div>
         
         <div className="relative z-10 text-center text-primary-foreground max-w-4xl mx-auto px-6">
-          <div className="mb-8">
-            <h1 className="font-playfair text-5xl md:text-7xl font-medium mb-6">
-              orcia
-            </h1>
-            <div className="w-24 h-1 bg-gold rounded-full mx-auto mb-8"></div>
+          <div className="mb-8 flex flex-col items-center">
+            <img src={orciaLogo} alt="orcia" className="mx-auto mb-4 drop-shadow-lg" style={{ width: 240, height: "auto" }} />
+            <span className="block font-playfair text-4xl md:text-5xl font-medium text-gold mb-2 tracking-wide">Beleza na forma.</span>
+            <span className="block font-inter text-lg md:text-xl text-primary-foreground/80 mb-2 max-w-2xl mx-auto">Cubas com design refinado, materiais nobres e acabamento impecável. Inspirada no Vale d'Orcia, na Itália.</span>
           </div>
-          
-          <p className="font-playfair text-2xl md:text-3xl font-light mb-4">
-            Beleza na forma.
-          </p>
-          
-          <p className="font-inter text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-            Cubas com design refinado, materiais nobres e acabamento impecável. 
-            Inspirada no Vale d'Orcia, na Itália.
-          </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-gold text-background hover:bg-gold/90 font-inter font-medium px-8">
@@ -169,4 +160,4 @@ const Index = () => {
       </section>
     </Layout>;
 };
-export default Index;
+export default AltHome;

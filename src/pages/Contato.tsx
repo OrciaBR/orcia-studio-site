@@ -37,7 +37,7 @@ const Contato = () => {
                   </h2>
                   <div className="w-12 h-0.5 bg-gold rounded-full mb-8"></div>
                   
-                  <form className="space-y-6">
+                  <form name="Contato" method="POST" data-netlify="true" className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
                         <Label htmlFor="nome" className="font-inter text-sm font-medium text-foreground">
@@ -45,6 +45,8 @@ const Contato = () => {
                         </Label>
                         <Input 
                           id="nome" 
+                          name="nome"
+                          type="text"
                           placeholder="Seu nome"
                           className="mt-2"
                         />
@@ -55,6 +57,7 @@ const Contato = () => {
                         </Label>
                         <Input 
                           id="email" 
+                          name="email"
                           type="email" 
                           placeholder="seu@email.com"
                           className="mt-2"
@@ -69,6 +72,8 @@ const Contato = () => {
                         </Label>
                         <Input 
                           id="telefone" 
+                          name="telefone"
+                          type="tel"
                           placeholder="(11) 99999-9999"
                           className="mt-2"
                         />
@@ -79,6 +84,8 @@ const Contato = () => {
                         </Label>
                         <Input 
                           id="empresa" 
+                          name="empresa"
+                          type="text"
                           placeholder="Nome da empresa"
                           className="mt-2"
                         />
@@ -91,6 +98,8 @@ const Contato = () => {
                       </Label>
                       <Input 
                         id="assunto" 
+                        name="assunto"
+                        type="text"
                         placeholder="Como podemos ajudar?"
                         className="mt-2"
                       />
@@ -102,6 +111,7 @@ const Contato = () => {
                       </Label>
                       <Textarea 
                         id="mensagem"
+                        name="mensagem"
                         placeholder="Descreva seu projeto ou necessidade..."
                         className="mt-2 min-h-[150px]"
                       />

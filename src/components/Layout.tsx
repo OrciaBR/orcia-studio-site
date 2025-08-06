@@ -39,9 +39,11 @@ const Layout = ({
 
             {/* CTA Button */}
             <div className="hidden md:block">
-              <Button variant="outline" className="border-gold text-gold hover:bg-gold hover:text-background font-inter">
-                Catálogo
-              </Button>
+              <a href="https://lista.mercadolivre.com.br/_CustId_2428547429" target="_blank" rel="noopener noreferrer">
+                <Button variant="outline" className="border-gold text-gold hover:bg-gold hover:text-background font-inter">
+                  Catálogo
+                </Button>
+              </a>
             </div>
 
             {/* Mobile menu button */}

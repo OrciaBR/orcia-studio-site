@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import { Card, CardContent } from "@/components/ui/card";
+import orciaLogo from "@/assets/orcia-logo.svg";
 
 const Sobre = () => {
   return (
@@ -154,9 +155,8 @@ const Sobre = () => {
             </div>
             <div className="relative">
               <div className="bg-background p-12 rounded-lg shadow-2xl text-center">
-                <div className="mb-8">
-                  <span className="font-playfair text-6xl font-medium text-foreground">orcia</span>
-                  <div className="w-20 h-1 bg-gold rounded-full mx-auto mt-2"></div>
+                <div>
+                  <img src={orciaLogo} alt="Orcia Logo" className="mx-auto" style={{ width: 220, height: "auto" }} />
                 </div>
                 <p className="font-playfair text-lg text-muted-foreground">
                   Beleza na forma.

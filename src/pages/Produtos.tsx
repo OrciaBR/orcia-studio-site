@@ -62,11 +62,7 @@ const Produtos = () => {
                   <p className="font-inter text-muted-foreground mb-6 leading-relaxed">
                     {product.description}
                   </p>
-                  <div className="flex items-center justify-end">
-                    <Button className="bg-gold text-background hover:bg-gold/90 font-inter">
-                      Ver detalhes
-                    </Button>
-                  </div>
+                  
                 </CardContent>
               </Card>)}
           </div>
