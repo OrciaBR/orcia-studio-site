@@ -1,3 +1,10 @@
+import { Seo } from "@/components/Seo";
+      <Seo
+        title="Cuba Luce | Orcia - Design e Elegância para seu Banheiro"
+        description="Cuba de apoio sobrepor Luce: design elegante, compacto e sofisticado. Durabilidade, fácil instalação e acabamento impecável. Veja fotos e detalhes."
+        image="/android-chrome-512x512.png"
+        url="https://orcia.com.br/produtos/luce"
+      />
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
@@ -18,9 +25,12 @@ const Luce = () => {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="font-playfair text-4xl md:text-5xl font-medium text-foreground mb-6">
-                Cuba de Apoio Sobrepor Luce | ORCIA
+              <h1 className="font-playfair text-4xl md:text-5xl font-semibold text-foreground mb-4">
+                Cuba Luce
               </h1>
+              <h2 className="font-inter text-xl md:text-2xl text-gold font-medium mb-6">
+                Design e Elegância para o seu Banheiro
+              </h2>
               <div className="w-16 h-0.5 bg-gold rounded-full mb-8"></div>
               <p className="font-inter text-lg text-muted-foreground mb-6 leading-relaxed">
                 Design e Elegância para o seu Banheiro<br />
@@ -37,7 +47,7 @@ const Luce = () => {
                 <li>Dimensões: 37 cm (comprimento) x 27 cm (largura) x 11,5 cm (altura)</li>
                 <li>Furo para Válvula: 1 1/4"</li>
                 <li>Válvula: Não inclusa</li>
-                <li>Peso Aproximado: 6,5 kg</li>
+                <li>Peso Aproximado: 3,5 kg</li>
               </ul>
               <Button size="lg" className="bg-gold text-background hover:bg-gold/90 font-inter font-medium px-8 mb-4" asChild>
                 <a href={luceUrl} target="_blank" rel="noopener noreferrer">Compre no Mercado Livre</a>
@@ -53,12 +63,12 @@ const Luce = () => {
             </div>
             <div>
               <div className="grid grid-cols-2 gap-4">
-                <img src={img1} alt="Cuba Luce - Foto 1" className="rounded-lg shadow" />
-                <img src={img2} alt="Cuba Luce - Foto 2" className="rounded-lg shadow" />
-                <img src={img3} alt="Cuba Luce - Foto 3" className="rounded-lg shadow" />
-                <img src={img4} alt="Cuba Luce - Foto 4" className="rounded-lg shadow" />
-                <img src={img5} alt="Cuba Luce - Foto 5" className="rounded-lg shadow" />
-                <img src={img6} alt="Cuba Luce - Foto 6" className="rounded-lg shadow" />
+                <img src={img1} alt="Cuba Luce - Foto 1" className="rounded-lg shadow" loading="lazy" />
+                <img src={img2} alt="Cuba Luce - Foto 2" className="rounded-lg shadow" loading="lazy" />
+                <img src={img3} alt="Cuba Luce - Foto 3" className="rounded-lg shadow" loading="lazy" />
+                <img src={img4} alt="Cuba Luce - Foto 4" className="rounded-lg shadow" loading="lazy" />
+                <img src={img5} alt="Cuba Luce - Foto 5" className="rounded-lg shadow" loading="lazy" />
+                <img src={img6} alt="Cuba Luce - Foto 6" className="rounded-lg shadow" loading="lazy" />
               </div>
             </div>
           </div>

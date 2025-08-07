@@ -1,3 +1,10 @@
+import { Seo } from "@/components/Seo";
+      <Seo
+        title="Produtos Orcia - Cubas de Banheiro"
+        description="Conheça nossa linha de cubas de apoio, embutir e sobrepor. Design italiano, materiais nobres e acabamento impecável."
+        image="/android-chrome-512x512.png"
+        url="https://orcia.com.br/produtos"
+      />
 import luceImg from "@/assets/luce.png";
 import sienaImg from "@/assets/siena.png";
 import vittaImg from "@/assets/vitta.png";
@@ -63,8 +70,9 @@ const Produtos = () => {
                 <div className="aspect-[4/3] overflow-hidden">
                   <img
                     src={product.image}
-                    alt={product.name}
+                    alt={`Foto da ${product.name}`}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
                   />
                 </div>
                 <CardContent className="p-8">
@@ -87,6 +95,40 @@ const Produtos = () => {
                         asChild
                       >
                         <Link to="/produtos/luce">Ver produto</Link>
+                      </Button>
+                      <Button
+                        size="lg"
+                        className="bg-gold text-background hover:bg-gold/90 font-inter font-medium px-8 w-full"
+                        asChild
+                      >
+                        <a href={product.url} target="_blank" rel="noopener noreferrer">Comprar agora</a>
+                      </Button>
+                    </div>
+                  ) : product.name === "Cuba Vitta" ? (
+                    <div className="flex flex-col gap-2 mt-2">
+                      <Button
+                        size="lg"
+                        className="bg-primary text-background hover:bg-primary/90 font-inter font-medium px-8 w-full"
+                        asChild
+                      >
+                        <Link to="/produtos/vitta">Ver produto</Link>
+                      </Button>
+                      <Button
+                        size="lg"
+                        className="bg-gold text-background hover:bg-gold/90 font-inter font-medium px-8 w-full"
+                        asChild
+                      >
+                        <a href={product.url} target="_blank" rel="noopener noreferrer">Comprar agora</a>
+                      </Button>
+                    </div>
+                  ) : product.name === "Cuba Siena" ? (
+                    <div className="flex flex-col gap-2 mt-2">
+                      <Button
+                        size="lg"
+                        className="bg-primary text-background hover:bg-primary/90 font-inter font-medium px-8 w-full"
+                        asChild
+                      >
+                        <Link to="/produtos/siena">Ver produto</Link>
                       </Button>
                       <Button
                         size="lg"

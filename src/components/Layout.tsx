@@ -32,19 +32,22 @@ const Layout = ({
 
             {/* Navigation */}
             <div className="hidden md:flex items-center space-x-8">
-              <Link to="/" className={`font-inter text-sm font-medium transition-colors hover:text-gold ${isActive('/') ? 'text-gold' : 'text-foreground'}`}>
+              <Link to="/" tabIndex={0} className={`font-inter text-sm font-medium transition-colors hover:text-gold focus:outline focus:outline-2 focus:outline-gold ${isActive('/') ? 'text-gold' : 'text-foreground'}`}>
                 Início
               </Link>
-              <Link to="/produtos" className={`font-inter text-sm font-medium transition-colors hover:text-gold ${isActive('/produtos') ? 'text-gold' : 'text-foreground'}`}>
+              <Link to="/produtos" tabIndex={0} className={`font-inter text-sm font-medium transition-colors hover:text-gold focus:outline focus:outline-2 focus:outline-gold ${isActive('/produtos') ? 'text-gold' : 'text-foreground'}`}>
                 Produtos
               </Link>
-              <Link to="/sobre" className={`font-inter text-sm font-medium transition-colors hover:text-gold ${isActive('/sobre') ? 'text-gold' : 'text-foreground'}`}>
+              <Link to="/sobre" tabIndex={0} className={`font-inter text-sm font-medium transition-colors hover:text-gold focus:outline focus:outline-2 focus:outline-gold ${isActive('/sobre') ? 'text-gold' : 'text-foreground'}`}>
                 Sobre
               </Link>
-              <Link to="/trabalhe-conosco" className={`font-inter text-sm font-medium transition-colors hover:text-gold ${isActive('/trabalhe-conosco') ? 'text-gold' : 'text-foreground'}`}>
+              <Link to="/faq" tabIndex={0} className={`font-inter text-sm font-medium transition-colors hover:text-gold focus:outline focus:outline-2 focus:outline-gold ${isActive('/faq') ? 'text-gold' : 'text-foreground'}`}>
+                FAQ
+              </Link>
+              <Link to="/trabalhe-conosco" tabIndex={0} className={`font-inter text-sm font-medium transition-colors hover:text-gold focus:outline focus:outline-2 focus:outline-gold ${isActive('/trabalhe-conosco') ? 'text-gold' : 'text-foreground'}`}>
                 Trabalhe Conosco
               </Link>
-              <Link to="/contato" className={`font-inter text-sm font-medium transition-colors hover:text-gold ${isActive('/contato') ? 'text-gold' : 'text-foreground'}`}>
+              <Link to="/contato" tabIndex={0} className={`font-inter text-sm font-medium transition-colors hover:text-gold focus:outline focus:outline-2 focus:outline-gold ${isActive('/contato') ? 'text-gold' : 'text-foreground'}`}>
                 Contato
               </Link>
             </div>
@@ -67,11 +70,12 @@ const Layout = ({
               </button>
               {mobileMenuOpen && (
                 <div className="absolute right-0 mt-2 w-48 bg-background border border-border/50 rounded-lg shadow-lg z-50 flex flex-col py-2">
-                  <Link to="/" className={`px-4 py-2 font-inter text-sm hover:bg-gold/10 ${isActive('/') ? 'text-gold font-semibold' : 'text-foreground'}`} onClick={() => setMobileMenuOpen(false)}>Início</Link>
-                  <Link to="/produtos" className={`px-4 py-2 font-inter text-sm hover:bg-gold/10 ${isActive('/produtos') ? 'text-gold font-semibold' : 'text-foreground'}`} onClick={() => setMobileMenuOpen(false)}>Produtos</Link>
-                  <Link to="/sobre" className={`px-4 py-2 font-inter text-sm hover:bg-gold/10 ${isActive('/sobre') ? 'text-gold font-semibold' : 'text-foreground'}`} onClick={() => setMobileMenuOpen(false)}>Sobre</Link>
-                  <Link to="/trabalhe-conosco" className={`px-4 py-2 font-inter text-sm hover:bg-gold/10 ${isActive('/trabalhe-conosco') ? 'text-gold font-semibold' : 'text-foreground'}`} onClick={() => setMobileMenuOpen(false)}>Trabalhe Conosco</Link>
-                  <Link to="/contato" className={`px-4 py-2 font-inter text-sm hover:bg-gold/10 ${isActive('/contato') ? 'text-gold font-semibold' : 'text-foreground'}`} onClick={() => setMobileMenuOpen(false)}>Contato</Link>
+                  <Link to="/" tabIndex={0} className={`px-4 py-2 font-inter text-sm hover:bg-gold/10 focus:outline focus:outline-2 focus:outline-gold ${isActive('/') ? 'text-gold font-semibold' : 'text-foreground'}`} onClick={() => setMobileMenuOpen(false)}>Início</Link>
+                  <Link to="/produtos" tabIndex={0} className={`px-4 py-2 font-inter text-sm hover:bg-gold/10 focus:outline focus:outline-2 focus:outline-gold ${isActive('/produtos') ? 'text-gold font-semibold' : 'text-foreground'}`} onClick={() => setMobileMenuOpen(false)}>Produtos</Link>
+                  <Link to="/sobre" tabIndex={0} className={`px-4 py-2 font-inter text-sm hover:bg-gold/10 focus:outline focus:outline-2 focus:outline-gold ${isActive('/sobre') ? 'text-gold font-semibold' : 'text-foreground'}`} onClick={() => setMobileMenuOpen(false)}>Sobre</Link>
+                  <Link to="/faq" tabIndex={0} className={`px-4 py-2 font-inter text-sm hover:bg-gold/10 focus:outline focus:outline-2 focus:outline-gold ${isActive('/faq') ? 'text-gold font-semibold' : 'text-foreground'}`} onClick={() => setMobileMenuOpen(false)}>FAQ</Link>
+                  <Link to="/trabalhe-conosco" tabIndex={0} className={`px-4 py-2 font-inter text-sm hover:bg-gold/10 focus:outline focus:outline-2 focus:outline-gold ${isActive('/trabalhe-conosco') ? 'text-gold font-semibold' : 'text-foreground'}`} onClick={() => setMobileMenuOpen(false)}>Trabalhe Conosco</Link>
+                  <Link to="/contato" tabIndex={0} className={`px-4 py-2 font-inter text-sm hover:bg-gold/10 focus:outline focus:outline-2 focus:outline-gold ${isActive('/contato') ? 'text-gold font-semibold' : 'text-foreground'}`} onClick={() => setMobileMenuOpen(false)}>Contato</Link>
                   <a href="https://lista.mercadolivre.com.br/_CustId_2428547429" target="_blank" rel="noopener noreferrer" className="px-4 py-2">
                     <Button variant="outline" className="w-full border-gold text-gold hover:bg-gold hover:text-background font-inter">
                       Catálogo
