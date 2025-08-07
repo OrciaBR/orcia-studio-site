@@ -16,4 +16,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  // build.rollupOptions.external removido para garantir que todas as dependências sejam empacotadas corretamente
 }));
