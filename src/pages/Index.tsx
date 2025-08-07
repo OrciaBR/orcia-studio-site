@@ -3,18 +3,19 @@ import { Card, CardContent } from "@/components/ui/card";
 import Layout from "@/components/Layout";
 import { Link } from "react-router-dom";
 import heroBathroom from "@/assets/hero-bathroom.jpg";
+import heroBathroomWebp from "@/assets/hero-bathroom.webp";
 import productBasin from "@/assets/product-basin.jpg";
+import productBasinWebp from "@/assets/product-basin.webp";
 import orciaLogo from "@/assets/orcia-logo-white.svg";
 const Index = () => {
   return <Layout>
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0" style={{
-        backgroundImage: `url(${heroBathroom})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}>
+        <div className="absolute inset-0 z-0">
+          <picture>
+            <source srcSet={heroBathroomWebp} type="image/webp" />
+            <img src={heroBathroom} alt="Banheiro com cuba Orcia" className="w-full h-full object-cover" style={{ objectPosition: 'center' }} />
+          </picture>
           <div className="absolute inset-0 bg-primary/70"></div>
         </div>
         
@@ -70,7 +71,10 @@ const Index = () => {
             </div>
             
             <div className="relative">
-              <img src={productBasin} alt="Cuba Orcia" className="w-full h-auto rounded-lg shadow-2xl" />
+              <picture>
+                <source srcSet={productBasinWebp} type="image/webp" />
+                <img src={productBasin} alt="Cuba Orcia" className="w-full h-auto rounded-lg shadow-2xl" />
+              </picture>
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gold/10 rounded-lg -z-10"></div>
             </div>
           </div>
