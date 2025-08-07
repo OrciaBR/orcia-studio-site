@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import { Seo } from "@/components/Seo";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import img1 from "@/assets/Fotos - Luce/imagem 1.png";
@@ -19,7 +20,35 @@ const luceUrl = "https://www.mercadolivre.com.br/cuba-pia-de-apoio-sobrepor-37x2
 const Luce = () => {
   const navigate = useNavigate();
   return (
-    <Layout>
+    <>
+      <Seo
+        title="Cuba Luce - Orcia Studio"
+        description="Cuba de apoio/sobrepor Luce: design elegante, compacto e funcional para banheiros modernos. Veja fotos e detalhes."
+        canonical="https://orcia.com.br/luce"
+      />
+      {/* JSON-LD Structured Data */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: 'Orcia Studio',
+        url: 'https://orcia.com.br/',
+        logo: 'https://orcia.com.br/assets/orcia-logo-white.svg',
+        sameAs: [
+          'https://www.instagram.com/orciastudio',
+          'https://www.facebook.com/orciastudio'
+        ]
+      }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://orcia.com.br/' },
+          { '@type': 'ListItem', position: 2, name: 'Cuba Luce', item: 'https://orcia.com.br/luce' }
+        ]
+      }) }} />
+      <a href="#main-content" className="sr-only focus:not-sr-only bg-primary text-primary-foreground p-2 absolute z-50">Pular para o conteúdo principal</a>
+      <Layout>
+        <main id="main-content" aria-label="Conteúdo principal">
       <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -91,7 +120,9 @@ const Luce = () => {
           </div>
         </div>
       </section>
-    </Layout>
+        </main>
+      </Layout>
+    </>
   );
 };
 
