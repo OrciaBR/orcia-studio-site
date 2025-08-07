@@ -2,10 +2,15 @@ import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import img1 from "@/assets/Fotos- Vitta/Vitta1.png";
+import img1Webp from "@/assets/Fotos- Vitta/Vitta1.webp";
 import img2 from "@/assets/Fotos- Vitta/Vitta2.png";
+import img2Webp from "@/assets/Fotos- Vitta/Vitta2.webp";
 import img3 from "@/assets/Fotos- Vitta/Vitta3.png";
+import img3Webp from "@/assets/Fotos- Vitta/Vitta3.webp";
 import img4 from "@/assets/Fotos- Vitta/Vitta4.png";
+import img4Webp from "@/assets/Fotos- Vitta/Vitta4.webp";
 import img5 from "@/assets/Fotos- Vitta/Vitta5.png";
+import img5Webp from "@/assets/Fotos- Vitta/Vitta5.webp";
 
 const vittaUrl = "https://www.mercadolivre.com.br/cuba-embutir-48cm-x-355cm-para-banheiro-lavabo-orcia-vitta/up/MLBU3292567143?pdp_filters=seller_id%3A2428547429";
 
@@ -54,11 +59,26 @@ const Vitta = () => {
             </div>
             <div>
               <div className="grid grid-cols-2 gap-4">
-                <img src={img1} alt="Cuba Vitta - Foto 1" className="rounded-lg shadow" loading="lazy" />
-                <img src={img2} alt="Cuba Vitta - Foto 2" className="rounded-lg shadow" loading="lazy" />
-                <img src={img3} alt="Cuba Vitta - Foto 3" className="rounded-lg shadow" loading="lazy" />
-                <img src={img4} alt="Cuba Vitta - Foto 4" className="rounded-lg shadow" loading="lazy" />
-                <img src={img5} alt="Cuba Vitta - Foto 5" className="rounded-lg shadow" loading="lazy" />
+                <picture>
+                  <source srcSet={img1Webp} type="image/webp" />
+                  <img src={img1} alt="Cuba Vitta - Foto 1" className="rounded-lg shadow" loading="lazy" />
+                </picture>
+                <picture>
+                  <source srcSet={img2Webp} type="image/webp" />
+                  <img src={img2} alt="Cuba Vitta - Foto 2" className="rounded-lg shadow" loading="lazy" />
+                </picture>
+                <picture>
+                  <source srcSet={img3Webp} type="image/webp" />
+                  <img src={img3} alt="Cuba Vitta - Foto 3" className="rounded-lg shadow" loading="lazy" />
+                </picture>
+                <picture>
+                  <source srcSet={img4Webp} type="image/webp" />
+                  <img src={img4} alt="Cuba Vitta - Foto 4" className="rounded-lg shadow" loading="lazy" />
+                </picture>
+                <picture>
+                  <source srcSet={img5Webp} type="image/webp" />
+                  <img src={img5} alt="Cuba Vitta - Foto 5" className="rounded-lg shadow" loading="lazy" />
+                </picture>
               </div>
             </div>
           </div>

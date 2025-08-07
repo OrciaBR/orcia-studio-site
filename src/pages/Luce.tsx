@@ -2,11 +2,17 @@ import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import img1 from "@/assets/Fotos - Luce/imagem 1.png";
+import img1Webp from "@/assets/Fotos - Luce/imagem 1.webp";
 import img2 from "@/assets/Fotos - Luce/imagem 2.png";
+import img2Webp from "@/assets/Fotos - Luce/imagem 2.webp";
 import img3 from "@/assets/Fotos - Luce/imagem 3.png";
+import img3Webp from "@/assets/Fotos - Luce/imagem 3.webp";
 import img4 from "@/assets/Fotos - Luce/imagem 4.png";
+import img4Webp from "@/assets/Fotos - Luce/imagem 4.webp";
 import img5 from "@/assets/Fotos - Luce/imagem 5.png";
+import img5Webp from "@/assets/Fotos - Luce/imagem 5.webp";
 import img6 from "@/assets/Fotos - Luce/imagem 6.png";
+import img6Webp from "@/assets/Fotos - Luce/imagem 6.webp";
 
 const luceUrl = "https://www.mercadolivre.com.br/cuba-pia-de-apoio-sobrepor-37x27cm-branca-para-banheiro-lavabo-luce-orcia/p/MLB51901843?pdp_filters=seller_id%3A2428547429";
 
@@ -56,12 +62,30 @@ const Luce = () => {
             </div>
             <div>
               <div className="grid grid-cols-2 gap-4">
-                <img src={img1} alt="Cuba Luce - Foto 1" className="rounded-lg shadow" loading="lazy" />
-                <img src={img2} alt="Cuba Luce - Foto 2" className="rounded-lg shadow" loading="lazy" />
-                <img src={img3} alt="Cuba Luce - Foto 3" className="rounded-lg shadow" loading="lazy" />
-                <img src={img4} alt="Cuba Luce - Foto 4" className="rounded-lg shadow" loading="lazy" />
-                <img src={img5} alt="Cuba Luce - Foto 5" className="rounded-lg shadow" loading="lazy" />
-                <img src={img6} alt="Cuba Luce - Foto 6" className="rounded-lg shadow" loading="lazy" />
+                <picture>
+                  <source srcSet={img1Webp} type="image/webp" />
+                  <img src={img1} alt="Cuba Luce - Foto 1" className="rounded-lg shadow" loading="lazy" />
+                </picture>
+                <picture>
+                  <source srcSet={img2Webp} type="image/webp" />
+                  <img src={img2} alt="Cuba Luce - Foto 2" className="rounded-lg shadow" loading="lazy" />
+                </picture>
+                <picture>
+                  <source srcSet={img3Webp} type="image/webp" />
+                  <img src={img3} alt="Cuba Luce - Foto 3" className="rounded-lg shadow" loading="lazy" />
+                </picture>
+                <picture>
+                  <source srcSet={img4Webp} type="image/webp" />
+                  <img src={img4} alt="Cuba Luce - Foto 4" className="rounded-lg shadow" loading="lazy" />
+                </picture>
+                <picture>
+                  <source srcSet={img5Webp} type="image/webp" />
+                  <img src={img5} alt="Cuba Luce - Foto 5" className="rounded-lg shadow" loading="lazy" />
+                </picture>
+                <picture>
+                  <source srcSet={img6Webp} type="image/webp" />
+                  <img src={img6} alt="Cuba Luce - Foto 6" className="rounded-lg shadow" loading="lazy" />
+                </picture>
               </div>
             </div>
           </div>
