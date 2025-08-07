@@ -150,7 +150,7 @@ const Contato = () => {
                     <Button 
                       type="submit" 
                       size="lg"
-                      className="w-full bg-gold text-background hover:bg-gold/90 font-inter font-medium"
+                      className="w-full bg-gold text-black hover:bg-gold/90 font-inter font-medium"
                     >
                       Enviar mensagem
                     </Button>

@@ -76,7 +76,7 @@ const Siena = () => {
                 <li>Válvula: Não inclusa</li>
                 <li>Peso Aproximado: 4,5 kg</li>
               </ul>
-              <Button size="lg" className="bg-gold text-background hover:bg-gold/90 font-inter font-medium px-8 mb-4" asChild>
+              <Button size="lg" className="bg-gold text-black hover:bg-gold/90 font-inter font-medium px-8 mb-4" asChild>
                 <a href={sienaUrl} target="_blank" rel="noopener noreferrer">Compre no Mercado Livre</a>
               </Button>
               <Button variant="outline" size="lg" className="border-primary-foreground text-primary hover:text-primary font-inter" onClick={() => navigate(-1)}>
