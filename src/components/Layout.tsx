@@ -11,6 +11,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import orciaLogo from "@/assets/orcia-logo.svg";
+import orciaLogoWhite from "@/assets/orcia-logo-white.svg";
 const Layout = ({
   children
 }: {
@@ -100,7 +101,7 @@ const Layout = ({
             {/* Logo e descrição */}
             <div className="md:col-span-2">
               <div className="mb-4">
-                <img src={orciaLogo} alt="Orcia Logo" className="h-12 w-auto" />
+                <img src={orciaLogoWhite} alt="Orcia Logo" className="h-12 w-auto" />
               </div>
               <p className="font-inter text-sm text-primary-foreground/80 mb-4 max-w-md">
                 Beleza na forma. Cubas com design refinado, materiais nobres e acabamento impecável. 

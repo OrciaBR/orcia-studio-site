@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Layout from "@/components/Layout";
 import { Link } from "react-router-dom";
+import { Seo } from "@/components/Seo";
 const Produtos = () => {
   const products = [
     {
@@ -38,7 +39,41 @@ const Produtos = () => {
       url: "https://www.mercadolivre.com.br/cuba-embutir-48cm-x-355cm-para-banheiro-lavabo-orcia-vitta/up/MLBU3292567143?pdp_filters=seller_id%3A2428547429"
     },
   ];
-  return <Layout>
+  return (
+    <>
+      <Seo
+        title="Produtos Orcia - Cubas de Design Italiano"
+        description="Conheça a linha completa de cubas Orcia: Luce, Siena e Vitta. Design, qualidade e elegância para seu banheiro."
+        canonical="https://orcia.com.br/produtos"
+      />
+      {/* JSON-LD Structured Data para produtos */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@graph': products.map((product) => ({
+              '@type': 'Product',
+              name: product.name,
+              description: product.description,
+              image: `https://orcia.com.br/assets/${product.image.split('/').pop()}`,
+              brand: {
+                '@type': 'Brand',
+                name: 'Orcia Studio',
+              },
+              offers: {
+                '@type': 'Offer',
+                url: product.url,
+                priceCurrency: 'BRL',
+                availability: 'https://schema.org/InStock',
+              },
+            })),
+          }),
+        }}
+      />
+      <a href="#main-content" className="sr-only focus:not-sr-only bg-primary text-primary-foreground p-2 absolute z-50">Pular para o conteúdo principal</a>
+      <Layout>
+        <main id="main-content" aria-label="Conteúdo principal">
       {/* Hero Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
@@ -192,6 +227,9 @@ const Produtos = () => {
           </div>
         </div>
       </section>
-    </Layout>;
+        </main>
+      </Layout>
+    </>
+  );
 };
 export default Produtos;

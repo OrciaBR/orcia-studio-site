@@ -5,6 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import Layout from "@/components/Layout";
+import { Seo } from "@/components/Seo";
 const Vagas = [
   {
     title: "Auxiliar de Produção",
@@ -19,7 +20,36 @@ const Vagas = [
   }
 ];
 const TrabalheConosco = () => {
-  return <Layout>
+  return (
+    <>
+      <Seo
+        title="Trabalhe Conosco - Orcia Studio"
+        description="Faça parte da equipe Orcia Studio. Veja vagas abertas e envie seu currículo para trabalhar conosco."
+        canonical="https://orcia.com.br/trabalheconosco"
+      />
+      {/* JSON-LD Structured Data */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: 'Orcia Studio',
+        url: 'https://orcia.com.br/',
+        logo: 'https://orcia.com.br/assets/orcia-logo-white.svg',
+        sameAs: [
+          'https://www.instagram.com/orciastudio',
+          'https://www.facebook.com/orciastudio'
+        ]
+      }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://orcia.com.br/' },
+          { '@type': 'ListItem', position: 2, name: 'Trabalhe Conosco', item: 'https://orcia.com.br/trabalheconosco' }
+        ]
+      }) }} />
+      <a href="#main-content" className="sr-only focus:not-sr-only bg-primary text-primary-foreground p-2 absolute z-50">Pular para o conteúdo principal</a>
+      <Layout>
+        <main id="main-content" aria-label="Conteúdo principal">
     {/* Hero Section */}
     <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
@@ -210,7 +240,7 @@ const TrabalheConosco = () => {
                 </div>
 
                 <div className="pt-4">
-                  <Button type="submit" size="lg" className="w-full bg-gold text-background hover:bg-gold/90 font-inter font-medium">
+                  <Button type="submit" size="lg" className="w-full bg-gold text-black hover:bg-gold/90 font-inter font-medium">
                     Enviar candidatura
                   </Button>
                 </div>
@@ -225,6 +255,9 @@ const TrabalheConosco = () => {
         </div>
       </div>
     </section>
-  </Layout>;
+        </main>
+      </Layout>
+    </>
+  );
 };
 export default TrabalheConosco;

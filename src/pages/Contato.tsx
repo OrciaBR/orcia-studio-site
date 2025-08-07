@@ -4,10 +4,39 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import Layout from "@/components/Layout";
+import { Seo } from "@/components/Seo";
 
 const Contato = () => {
   return (
-    <Layout>
+    <>
+      <Seo
+        title="Contato - Orcia Studio"
+        description="Fale com a equipe Orcia Studio. Tire dúvidas, solicite orçamento ou envie sua mensagem."
+        canonical="https://orcia.com.br/contato"
+      />
+      {/* JSON-LD Structured Data */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: 'Orcia Studio',
+        url: 'https://orcia.com.br/',
+        logo: 'https://orcia.com.br/assets/orcia-logo-white.svg',
+        sameAs: [
+          'https://www.instagram.com/orciastudio',
+          'https://www.facebook.com/orciastudio'
+        ]
+      }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://orcia.com.br/' },
+          { '@type': 'ListItem', position: 2, name: 'Contato', item: 'https://orcia.com.br/contato' }
+        ]
+      }) }} />
+      <a href="#main-content" className="sr-only focus:not-sr-only bg-primary text-primary-foreground p-2 absolute z-50">Pular para o conteúdo principal</a>
+      <Layout>
+        <main id="main-content" aria-label="Conteúdo principal">
       {/* Hero Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
@@ -121,7 +150,7 @@ const Contato = () => {
                     <Button 
                       type="submit" 
                       size="lg"
-                      className="w-full bg-gold text-background hover:bg-gold/90 font-inter font-medium"
+                      className="w-full bg-gold text-black hover:bg-gold/90 font-inter font-medium"
                     >
                       Enviar mensagem
                     </Button>
@@ -267,7 +296,9 @@ const Contato = () => {
           </div>
         </div>
       </section>
-    </Layout>
+        </main>
+      </Layout>
+    </>
   );
 };
 

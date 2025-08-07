@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import { Seo } from "@/components/Seo";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import img1 from "@/assets/Fotos - Siena/oval 1.png";
@@ -19,7 +20,35 @@ const sienaUrl = "https://www.mercadolivre.com.br/cuba-branca-banheiro-lavabo-pi
 const Siena = () => {
   const navigate = useNavigate();
   return (
-    <Layout>
+    <>
+      <Seo
+        title="Cuba Siena - Orcia Studio"
+        description="Cuba de sobrepor oval Siena: charme clássico, acabamento impecável e sofisticação para seu banheiro. Veja fotos e detalhes."
+        canonical="https://orcia.com.br/siena"
+      />
+      {/* JSON-LD Structured Data */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: 'Orcia Studio',
+        url: 'https://orcia.com.br/',
+        logo: 'https://orcia.com.br/assets/orcia-logo-white.svg',
+        sameAs: [
+          'https://www.instagram.com/orciastudio',
+          'https://www.facebook.com/orciastudio'
+        ]
+      }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://orcia.com.br/' },
+          { '@type': 'ListItem', position: 2, name: 'Cuba Siena', item: 'https://orcia.com.br/siena' }
+        ]
+      }) }} />
+      <a href="#main-content" className="sr-only focus:not-sr-only bg-primary text-primary-foreground p-2 absolute z-50">Pular para o conteúdo principal</a>
+      <Layout>
+        <main id="main-content" aria-label="Conteúdo principal">
       <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -47,7 +76,7 @@ const Siena = () => {
                 <li>Válvula: Não inclusa</li>
                 <li>Peso Aproximado: 4,5 kg</li>
               </ul>
-              <Button size="lg" className="bg-gold text-background hover:bg-gold/90 font-inter font-medium px-8 mb-4" asChild>
+              <Button size="lg" className="bg-gold text-black hover:bg-gold/90 font-inter font-medium px-8 mb-4" asChild>
                 <a href={sienaUrl} target="_blank" rel="noopener noreferrer">Compre no Mercado Livre</a>
               </Button>
               <Button variant="outline" size="lg" className="border-primary-foreground text-primary hover:text-primary font-inter" onClick={() => navigate(-1)}>
@@ -90,7 +119,9 @@ const Siena = () => {
           </div>
         </div>
       </section>
-    </Layout>
+        </main>
+      </Layout>
+    </>
   );
 };
 

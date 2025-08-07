@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import { Seo } from "@/components/Seo";
 import {
   Accordion,
   AccordionContent,
@@ -8,7 +9,35 @@ import {
 
 const FAQ = () => {
   return (
-    <Layout>
+    <>
+      <Seo
+        title="Perguntas Frequentes - Orcia Studio"
+        description="Tire suas dúvidas sobre cubas Orcia, instalação, materiais, garantia e mais. Veja as perguntas frequentes."
+        canonical="https://orcia.com.br/faq"
+      />
+      {/* JSON-LD Structured Data */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: 'Orcia Studio',
+        url: 'https://orcia.com.br/',
+        logo: 'https://orcia.com.br/assets/orcia-logo-white.svg',
+        sameAs: [
+          'https://www.instagram.com/orciastudio',
+          'https://www.facebook.com/orciastudio'
+        ]
+      }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://orcia.com.br/' },
+          { '@type': 'ListItem', position: 2, name: 'FAQ', item: 'https://orcia.com.br/faq' }
+        ]
+      }) }} />
+      <a href="#main-content" className="sr-only focus:not-sr-only bg-primary text-primary-foreground p-2 absolute z-50">Pular para o conteúdo principal</a>
+      <Layout>
+        <main id="main-content" aria-label="Conteúdo principal">
       <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
@@ -146,7 +175,9 @@ const FAQ = () => {
           </div>
         </div>
       </section>
-    </Layout>
+        </main>
+      </Layout>
+    </>
   );
 };
 
