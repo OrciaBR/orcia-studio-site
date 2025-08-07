@@ -1,10 +1,3 @@
-import { Seo } from "@/components/Seo";
-      <Seo
-        title="Cuba Siena | Orcia - Charme e Elegância Clássica"
-        description="Cuba de sobrepor oval Siena: charme clássico, acabamento impecável e fácil instalação. Veja fotos, medidas e detalhes técnicos."
-        image="/android-chrome-512x512.png"
-        url="https://orcia.com.br/produtos/siena"
-      />
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";

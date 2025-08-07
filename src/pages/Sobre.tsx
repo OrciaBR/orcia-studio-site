@@ -1,10 +1,3 @@
-import { Seo } from "@/components/Seo";
-      <Seo
-        title="Sobre a Orcia - Design, Qualidade e Inspiração Italiana"
-        description="Conheça a história, missão e valores da Orcia. Cubas de banheiro com design refinado, materiais nobres e acabamento impecável."
-        image="/android-chrome-512x512.png"
-        url="https://orcia.com.br/sobre"
-      />
 import Layout from "@/components/Layout";
 import { Card, CardContent } from "@/components/ui/card";
 import orciaLogo from "@/assets/orcia-logo.svg";

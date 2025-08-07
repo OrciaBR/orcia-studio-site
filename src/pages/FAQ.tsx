@@ -1,10 +1,3 @@
-import { Seo } from "@/components/Seo";
-      <Seo
-        title="FAQ Orcia - Perguntas Frequentes sobre Cubas de Banheiro"
-        description="Tire suas dúvidas sobre cubas de apoio, embutir, sobrepor, instalação, manutenção, garantia e mais."
-        image="/android-chrome-512x512.png"
-        url="https://orcia.com.br/faq"
-      />
 import Layout from "@/components/Layout";
 import {
   Accordion,

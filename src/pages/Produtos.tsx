@@ -1,10 +1,3 @@
-import { Seo } from "@/components/Seo";
-      <Seo
-        title="Produtos Orcia - Cubas de Banheiro"
-        description="Conheça nossa linha de cubas de apoio, embutir e sobrepor. Design italiano, materiais nobres e acabamento impecável."
-        image="/android-chrome-512x512.png"
-        url="https://orcia.com.br/produtos"
-      />
 import luceImg from "@/assets/luce.png";
 import sienaImg from "@/assets/siena.png";
 import vittaImg from "@/assets/vitta.png";

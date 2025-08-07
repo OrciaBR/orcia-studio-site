@@ -1,10 +1,3 @@
-import { Seo } from "@/components/Seo";
-      <Seo
-        title="Cuba Luce | Orcia - Design e Elegância para seu Banheiro"
-        description="Cuba de apoio sobrepor Luce: design elegante, compacto e sofisticado. Durabilidade, fácil instalação e acabamento impecável. Veja fotos e detalhes."
-        image="/android-chrome-512x512.png"
-        url="https://orcia.com.br/produtos/luce"
-      />
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";

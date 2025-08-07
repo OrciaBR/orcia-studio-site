@@ -1,10 +1,3 @@
-import { Seo } from "@/components/Seo";
-      <Seo
-        title="Cuba Vitta | Orcia - Funcionalidade e Elegância Discreta"
-        description="Cuba de embutir Vitta: design clean, funcional e minimalista. Durabilidade, fácil limpeza e integração à bancada. Veja fotos e especificações."
-        image="/android-chrome-512x512.png"
-        url="https://orcia.com.br/produtos/vitta"
-      />
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";

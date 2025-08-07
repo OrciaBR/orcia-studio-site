@@ -1,10 +1,3 @@
-import { Seo } from "@/components/Seo";
-      <Seo
-        title="Orcia - Beleza na forma"
-        description="Cubas de banheiro com design refinado, materiais nobres e acabamento impecável. Beleza, funcionalidade e inspiração italiana para seu ambiente."
-        image="/android-chrome-512x512.png"
-        url="https://orcia.com.br/"
-      />
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Layout from "@/components/Layout";
