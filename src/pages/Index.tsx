@@ -34,7 +34,7 @@ const Index = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-gold text-background hover:bg-gold/90 font-inter font-medium px-8">
+            <Button size="lg" className="bg-gold text-primary hover:bg-gold/90 font-inter font-medium px-8">
               <Link to="/produtos">Conheça nossos produtos</Link>
             </Button>
             <Button variant="outline" size="lg" className="border-primary-foreground text-primary hover:text-primary font-inter">
@@ -160,7 +160,7 @@ const Index = () => {
             Descubra nossa linha completa de cubas e encontre a peça perfeita para seu projeto.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-gold text-background hover:bg-gold/90 font-inter font-medium px-8">
+            <Button size="lg" className="bg-gold text-primary hover:bg-gold/90 font-inter font-medium px-8">
               <Link to="/produtos">Ver produtos</Link>
             </Button>
             <Button variant="outline" size="lg" className="border-primary-foreground text-primary hover:bg-primary-foreground hover:text-primary font-inter">
