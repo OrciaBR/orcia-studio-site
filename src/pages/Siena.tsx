@@ -61,7 +61,7 @@ const Siena = () => {
               </h2>
               <div className="w-16 h-0.5 bg-gold rounded-full mb-8"></div>
               <p className="font-inter text-lg text-muted-foreground mb-6 leading-relaxed">
-                A Cuba de Sobrepor Oval Siena da ORCIA é a escolha perfeita para quem deseja adicionar um toque de charme e elegância clássica ao banheiro ou lavabo. Com seu formato oval e instalação de sobrepor, ela se destaca na bancada, criando um ponto focal sofisticado e convidativo.
+                A Cuba de Sobrepor Oval Siena da SOS Acabamentos by Orcia é a escolha perfeita para quem deseja adicionar um toque de charme e elegância clássica ao banheiro ou lavabo. Com seu formato oval e instalação de sobrepor, ela se destaca na bancada, criando um ponto focal sofisticado e convidativo.
               </p>
               <p className="font-inter text-lg text-muted-foreground mb-6 leading-relaxed">
                 Seu design atemporal e acabamento impecável complementam uma variedade de estilos decorativos, do rústico ao moderno, adicionando uma sensação de requinte ao ambiente. Produzida com materiais de alta qualidade, a Cuba Siena oferece durabilidade e resistência, garantindo que sua beleza e funcionalidade perdurem por muitos anos. A instalação de sobrepor é simples e prática, permitindo uma renovação rápida e com grande impacto visual.

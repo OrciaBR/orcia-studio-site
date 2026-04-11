@@ -62,7 +62,7 @@ const Luce = () => {
               <div className="w-16 h-0.5 bg-gold rounded-full mb-8"></div>
               <p className="font-inter text-lg text-muted-foreground mb-6 leading-relaxed">
                 Design e Elegância para o seu Banheiro<br />
-                A Cuba de Apoio Sobrepor Luce da ORCIA é a escolha ideal para quem busca modernidade e funcionalidade para o banheiro ou lavabo. Com um design elegante e compacto, ela se adapta a diferentes estilos de decoração e otimiza o espaço, garantindo um toque de sofisticação ao ambiente.
+                A Cuba de Apoio Sobrepor Luce da SOS Acabamentos by Orcia é a escolha ideal para quem busca modernidade e funcionalidade para o banheiro ou lavabo. Com um design elegante e compacto, ela se adapta a diferentes estilos de decoração e otimiza o espaço, garantindo um toque de sofisticação ao ambiente.
               </p>
               <p className="font-inter text-lg text-muted-foreground mb-6 leading-relaxed">
                 Seu formato e acabamento impecáveis elevam a estética, transformando seu banheiro em um espaço mais convidativo e contemporâneo. Produzida com materiais de alta qualidade, a Cuba Luce oferece durabilidade e resistência, mantendo sua beleza por muito mais tempo. A instalação de apoio/sobrepor é prática e descomplicada, facilitando a renovação do seu ambiente.

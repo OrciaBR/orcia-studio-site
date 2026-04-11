@@ -59,7 +59,7 @@ const Vitta = () => {
               </h2>
               <div className="w-16 h-0.5 bg-gold rounded-full mb-8"></div>
               <p className="font-inter text-lg text-muted-foreground mb-6 leading-relaxed">
-                A Cuba de Embutir Vitta da ORCIA é a solução perfeita para quem busca um design clean e funcional para o banheiro ou lavabo. Com sua instalação embutida, ela proporciona uma bancada livre e organizada, ideal para ambientes que valorizam a praticidade e a estética minimalista.
+                A Cuba de Embutir Vitta da SOS Acabamentos by Orcia é a solução perfeita para quem busca um design clean e funcional para o banheiro ou lavabo. Com sua instalação embutida, ela proporciona uma bancada livre e organizada, ideal para ambientes que valorizam a praticidade e a estética minimalista.
               </p>
               <p className="font-inter text-lg text-muted-foreground mb-6 leading-relaxed">
                 Seu formato retangular e acabamento suave se integram harmoniosamente a diversos estilos de decoração, desde os mais clássicos aos contemporâneos. Fabricada com materiais de alta qualidade, a Cuba Vitta garante durabilidade e resistência ao uso diário, mantendo seu brilho e funcionalidade por muito tempo. A instalação embutida é ideal para quem busca otimizar o espaço e criar uma superfície contínua e elegante.
