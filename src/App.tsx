@@ -15,6 +15,7 @@ const NotFound = lazy(() => import("@/pages/NotFound"));
 const Luce = lazy(() => import("@/pages/Luce"));
 const Vitta = lazy(() => import("@/pages/Vitta"));
 const FAQ = lazy(() => import("@/pages/FAQ"));
+const Aquisicao = lazy(() => import("@/pages/Aquisicao"));
 
 const queryClient = new QueryClient();
 
@@ -35,6 +36,7 @@ const App = () => (
             <Route path="/faq" element={<FAQ />} />
             <Route path="/trabalhe-conosco" element={<TrabalheConosco />} />
             <Route path="/contato" element={<Contato />} />
+            <Route path="/sos-acabamentos" element={<Aquisicao />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

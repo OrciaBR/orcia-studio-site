@@ -51,6 +51,10 @@ const Layout = ({
               <Link to="/contato" tabIndex={0} className={`font-inter text-sm font-medium transition-colors hover:text-gold focus:outline focus:outline-2 focus:outline-gold ${isActive('/contato') ? 'text-gold' : 'text-foreground'}`}>
                 Contato
               </Link>
+              <Link to="/sos-acabamentos" tabIndex={0} className={`font-inter text-sm font-medium transition-colors hover:text-gold focus:outline focus:outline-2 focus:outline-gold relative ${isActive('/sos-acabamentos') ? 'text-gold' : 'text-foreground'}`}>
+                SOS Acabamentos
+                <span className="absolute -top-2 -right-6 bg-gold text-background text-[10px] font-bold px-1.5 py-0.5 rounded-full">NEW</span>
+              </Link>
             </div>
 
             {/* CTA Button */}
@@ -77,6 +81,10 @@ const Layout = ({
                   <Link to="/faq" tabIndex={0} className={`px-4 py-2 font-inter text-sm hover:bg-gold/10 focus:outline focus:outline-2 focus:outline-gold ${isActive('/faq') ? 'text-gold font-semibold' : 'text-foreground'}`} onClick={() => setMobileMenuOpen(false)}>FAQ</Link>
                   <Link to="/trabalhe-conosco" tabIndex={0} className={`px-4 py-2 font-inter text-sm hover:bg-gold/10 focus:outline focus:outline-2 focus:outline-gold ${isActive('/trabalhe-conosco') ? 'text-gold font-semibold' : 'text-foreground'}`} onClick={() => setMobileMenuOpen(false)}>Trabalhe Conosco</Link>
                   <Link to="/contato" tabIndex={0} className={`px-4 py-2 font-inter text-sm hover:bg-gold/10 focus:outline focus:outline-2 focus:outline-gold ${isActive('/contato') ? 'text-gold font-semibold' : 'text-foreground'}`} onClick={() => setMobileMenuOpen(false)}>Contato</Link>
+                  <Link to="/sos-acabamentos" tabIndex={0} className={`px-4 py-2 font-inter text-sm hover:bg-gold/10 focus:outline focus:outline-2 focus:outline-gold flex items-center justify-between ${isActive('/sos-acabamentos') ? 'text-gold font-semibold' : 'text-foreground'}`} onClick={() => setMobileMenuOpen(false)}>
+                    <span>SOS Acabamentos</span>
+                    <span className="bg-gold text-background text-[10px] font-bold px-1.5 py-0.5 rounded-full">NEW</span>
+                  </Link>
                   <a href="https://lista.mercadolivre.com.br/_CustId_2428547429" target="_blank" rel="noopener noreferrer" className="px-4 py-2">
                     <Button variant="outline" className="w-full border-gold text-gold hover:bg-gold hover:text-background font-inter">
                       Catálogo
@@ -120,6 +128,7 @@ const Layout = ({
                 <li><Link to="/sobre" className="font-inter text-sm text-primary-foreground/80 hover:text-gold transition-colors">Sobre</Link></li>
                 <li><Link to="/trabalhe-conosco" className="font-inter text-sm text-primary-foreground/80 hover:text-gold transition-colors">Trabalhe Conosco</Link></li>
                 <li><Link to="/contato" className="font-inter text-sm text-primary-foreground/80 hover:text-gold transition-colors">Contato</Link></li>
+                <li><Link to="/sos-acabamentos" className="font-inter text-sm text-gold hover:text-gold/80 transition-colors font-medium">SOS Acabamentos</Link></li>
               </ul>
             </div>
 

@@ -59,7 +59,7 @@ const Produtos = () => {
               image: `https://orcia.com.br/assets/${product.image.split('/').pop()}`,
               brand: {
                 '@type': 'Brand',
-                name: 'Orcia Studio',
+                name: 'SOS Acabamentos by Orcia',
               },
               offers: {
                 '@type': 'Offer',
@@ -83,7 +83,7 @@ const Produtos = () => {
             </h1>
             <div className="w-24 h-1 bg-gold rounded-full mx-auto mb-8"></div>
             <p className="font-inter text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Cada cuba Orcia é uma obra de arte funcional, projetada para elevar 
+              Cada cuba SOS Acabamentos by Orcia é uma obra de arte funcional, projetada para elevar
               ambientes através da perfeita combinação entre forma e função.
             </p>
           </div>
